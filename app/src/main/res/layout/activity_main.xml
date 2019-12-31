@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed"
+        app:layout_constraintBaseline_toBaselineOf="@+id/speedId"
+        app:layout_constraintStart_toStartOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/speedId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:gravity="center_horizontal"
+        android:hint="Speed"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/buttonId"
+        app:layout_constraintEnd_toEndOf="@+id/timeId"
+        app:layout_constraintStart_toStartOf="@+id/timeId" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="Time"
+        app:layout_constraintBottom_toBottomOf="@+id/timeId"
+        app:layout_constraintStart_toStartOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/timeId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:gravity="center_horizontal"
+        android:hint="time"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/kmsId"
+        app:layout_constraintStart_toStartOf="@+id/kmsId"
+        app:layout_constraintTop_toBottomOf="@+id/kmsId" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:text="Kms"
+        app:layout_constraintBaseline_toBaselineOf="@+id/kmsId"
+        app:layout_constraintEnd_toStartOf="@+id/kmsId" />
+
+    <EditText
+        android:id="@+id/kmsId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:gravity="center_horizontal"
+        android:hint="Kms"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="285dp"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
